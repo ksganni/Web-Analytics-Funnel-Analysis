@@ -1,0 +1,7 @@
+channel,total_users,total_sessions,converting_sessions,conversion_rate_pct,total_revenue,revenue_per_session
+organic,32614,35238,408,1.16,23907.44,0.68
+referral,16969,19212,353,1.84,22684.4,1.18
+(none),22453,24486,340,1.39,21542.81,0.88
+(data deleted),6376,7653,234,3.06,13912.52,1.82
+<Other>,14561,14805,171,1.16,9376.25,0.63
+cpc,4400,4418,51,1.15,2465.42,0.56
