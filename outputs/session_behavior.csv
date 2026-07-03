@@ -1,0 +1,2 @@
+total_sessions,avg_session_duration_seconds,avg_session_duration_minutes,avg_pages_per_session,bounce_rate_pct,session_conversion_rate_pct,total_conversions
+108401,240.32,4.01,4.19,56.36,1.49,1617

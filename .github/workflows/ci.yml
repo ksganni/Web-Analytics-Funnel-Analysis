@@ -1,0 +1,42 @@
+# CI/CD Pipeline — Running automatically when you push code to GitHub
+name: Web Analytics Funnel CI
+
+# When to run this pipeline
+on:
+  push:
+    branches: [main, Develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    # Running on latest Ubuntu Linux (GitHub's free cloud runners)
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Downloading code onto the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Setting up Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Installing dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest flake8
+
+      # Step 4: Linting Python code (checking for style errors)
+      - name: Lint with flake8
+        run: |
+          flake8 python/ tests/ --max-line-length=100 --ignore=E501
+
+      # Step 5: Running unit tests (skipping BigQuery tests — no credentials in CI)
+      - name: Run tests
+        run: |
+          pytest tests/ -v --tb=short

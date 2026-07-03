@@ -1,0 +1,7 @@
+funnel_step,step_name,sessions_at_step,sessions_prev_step,dropped_off,step_conversion_rate_pct,overall_conversion_rate_pct
+1,session_start,108285,,,,100.0
+2,page_view,98664,108285,9621,91.12,91.12
+3,view_item,26006,98664,72658,26.36,24.02
+4,add_to_cart,5745,26006,20261,22.09,5.31
+5,begin_checkout,4587,5745,1158,79.84,4.24
+6,purchase,1617,4587,2970,35.25,1.49
