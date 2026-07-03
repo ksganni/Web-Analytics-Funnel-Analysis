@@ -345,5 +345,7 @@ The published Looker Studio dashboard contains 5 charts:
 4. **Table** - revenue, converting sessions, and conversion rate broken down by channel
 5. **Bar chart** - step-to-step conversion rate percentage at each funnel step
 
-[View Live Dashboard](screenshots/Looker_studio_Report.png) 
+![View Dashboard](screenshots/Looker_studio_Report.png) 
+
+**[View Live Interactive Dashboard](https://datastudio.google.com/reporting/0036886d-8b9c-4cc0-a4d0-685e57d90447)**
 ---

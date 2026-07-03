@@ -172,23 +172,6 @@ A high bounce rate combined with underperforming paid search strongly suggests t
 
 ---
 
-## Prioritized Action Plan
-
-| Priority | Action | Funnel Step Affected | Estimated Impact |
-|----------|--------|---------------------|------------------|
-| 🔴 Critical | Improve product discovery — redesign homepage and category pages | Page View → View Item | Highest potential — addresses 73% drop-off |
-| 🔴 Critical | Add guest checkout option | Begin Checkout → Purchase | Removes most common checkout barrier |
-| 🟡 High | Show complete order total before payment step | Begin Checkout → Purchase | Eliminates surprise abandonment |
-| 🟡 High | Pause underperforming CPC campaigns and audit all paid search | Acquisition quality | Stops waste of marketing budget |
-| 🟡 High | Strengthen product page content and add-to-cart button prominence | View Item → Add to Cart | Addresses 22% step conversion rate |
-| 🟢 Medium | Implement cart abandonment email recovery | Begin Checkout → Purchase | Recovers high-intent dropouts at low cost |
-| 🟢 Medium | Grow referral channel through partnerships and affiliate program | Acquisition | Expands best-converting channel |
-| 🟢 Medium | Improve page load speed and Core Web Vitals | Bounce Rate | Reduces 56% bounce rate |
-| 🔵 Low | Add product reviews and ratings to product pages | View Item → Add to Cart | Builds purchase confidence through social proof |
-| 🔵 Low | Personalize homepage product recommendations by traffic source | Page View → View Item | Increases product relevance for each channel |
-
----
-
 ## Methodology Notes
 
 - **Data source:** `bigquery-public-data.ga4_obfuscated_sample_ecommerce`
@@ -200,5 +183,3 @@ A high bounce rate combined with underperforming paid search strongly suggests t
 - **Tools used:** BigQuery (SQL), Python (google-cloud-bigquery, pandas, sqlalchemy), Looker Studio
 
 ---
-
-*All SQL queries used to produce this analysis are available in the `sql/` directory of this repository.*
