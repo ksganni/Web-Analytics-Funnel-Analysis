@@ -4,7 +4,7 @@ name: Web Analytics Funnel CI
 # When to run this pipeline
 on:
   push:
-    branches: [main, develop]
+    branches: [main, Develop]
   pull_request:
     branches: [main]
 
